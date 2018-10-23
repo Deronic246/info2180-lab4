@@ -18,5 +18,9 @@ window.onload=function(){
 			}
 		};
 	}
+	end.onmouseover=function(){
+		status.innerHTML="You Win! Press 'S' to Start Over!";
+	};
+
 	
 };
