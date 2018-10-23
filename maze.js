@@ -10,5 +10,13 @@ window.onload=function(){
 		this.classList.add("youlose");
 	};
 
+	for (var i=0; i<b1.length;i++){
+		b1[i].onmouseover=function(){
+			for(var j=0;j<b1.length;j++){
+				b1[j].classList.add("youlose");
+				status.innerHTML ="You lose. Press 'S' to try again!";
+			}
+		};
+	}
 	
 };
