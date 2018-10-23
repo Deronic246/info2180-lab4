@@ -22,5 +22,20 @@ window.onload=function(){
 		status.innerHTML="You Win! Press 'S' to Start Over!";
 	};
 
-	
+	start.onclick=function(){
+		for(var k=0;k<b1.length;k++){
+			b1[k].classList.remove("youlose");
+
+		}
+		status.innerHTML="Move your mouse over the 'S' to begin";
+
+		
+	};
+
+    maze.onmouseleave=function(){
+		status.innerHTML="You lose. Press 'S' to try again!";
+		for(var l=0;l<b1.length;l++){
+			b1[l].classList.add("youlose");
+		}
+	};
 };
